@@ -1,6 +1,4 @@
-Here’s a cleaned-up, more concise version:
 
----
 
 ## Ego4D NLQ
 
@@ -51,4 +49,4 @@ Here’s a cleaned-up, more concise version:
   * EgoVLP features from Google Drive
   * GloVe embeddings from Google Drive
 
----
+
