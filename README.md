@@ -1,18 +1,25 @@
-# Ego4D-NLQ
 
-The above 2 files are divided into 2 section. 
+## Ego4D-NLQ
 
-1. Primary Analysis: 
-    This contains the following: 
-        1. VSLNet on Omnivor Features. 
-        2. VSLNet on EgoVLP Features.
-        3. VSLBase on Omnivor Features.
-        4. VSLBase on EgoVLP Features. 
-        5. VSLNet on EgoVLP Features and GloVe Embeddings. 
+The repository provides two main sections:
 
-2. Extension: 
-    The contins the following: 
-        1. Pretraining on synthetic dataset with 10% Validation HoldOut.
-        2. Pretraining on whole synthetic dataset.
-        3. Transfer Learning VSLNet on original Ego4D Dataset.
-        4. Transfer Learning VSLNet on original Ego4D Dataset - With Frozne Feature Encoder. 
+### 1. Primary Analysis
+
+Includes evaluations of VSL models with different feature sets:
+
+1. **VSLNet** using Omnivor features
+2. **VSLNet** using EgoVLP features
+3. **VSLBase** using Omnivor features
+4. **VSLBase** using EgoVLP features
+5. **VSLNet** using EgoVLP features + GloVe embeddings
+
+### 2. Extensions
+
+Covers additional pretraining and transfer-learning experiments:
+
+1. Pretraining on synthetic data (10% held out for validation)
+2. Pretraining on the full synthetic dataset
+3. Transfer learning of VSLNet on the original Ego4D dataset
+4. Transfer learning of VSLNet on the original Ego4D dataset with a **frozen** feature encoder
+
+---
