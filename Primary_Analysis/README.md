@@ -1,23 +1,54 @@
-# Ego4D NLQ
+Here’s a cleaned-up, more concise version:
 
-Requirements: Required dataset folder (universal for all notebooks) (https://drive.google.com/drive/folders/1a9Tfdi_X5vUuBynKksF3xt6o_-IsoapF?usp=drive_link) who's shortcut must be in the location /Drive/MyDrive/data in your google drive folder.
+---
 
-1. VSLNet on Omnivor Features: 
-    The code fetches the model from original Github repository. 
-    Fetches the features directory from google drive. 
+## Ego4D NLQ
 
-2. VSLNet on EgoVLP Features: 
-    The code fetches the model and preprocessed prepared EgoVLP Features stored on the google bucket from previous run.
-    Thus, no preparing of the dataset is required.  
+**Prerequisites**
 
-3. VSLBase on Omnivor Features: 
-    The code fetches the VSLNet model along with preprocessed prepared Omnivor Features from google bucket. 
-    It is important to remove the directory VSLNet in the Episodic Memory directory, and replace it with VSLBase. 
+* Download the dataset folder (universal for all notebooks) from
+  [https://drive.google.com/drive/folders/1a9Tfdi\_X5vUuBynKksF3xt6o\_-IsoapF?usp=drive\_link](https://drive.google.com/drive/folders/1a9Tfdi_X5vUuBynKksF3xt6o_-IsoapF?usp=drive_link)
+* Place the Drive shortcut at:
 
-4. VSLBase on EgoVLP Features:
-    The code fetches the VSLNet model along with preprocessed prepared EgoVLP Features from google bucket. 
-    It is important to remove the directory VSLNet in the Episodic Memory directory, and replace it with VSLBase. 
+  ```
+  /Drive/MyDrive/data
+  ```
 
-5. VSLNet on EgoVLP Features and GloVe Embeddings. 
-    The code fetches the model from original Github repository. 
-    Fetches the features directory and the GloVe embeddings from google drive.  
+---
+
+### 1. VSLNet on Omnivor Features
+
+* **Model**: Pulled from the original GitHub repository
+* **Features**: Loaded from Google Drive
+
+### 2. VSLNet on EgoVLP Features
+
+* **Model**: Pulled from the original GitHub repository
+* **Features**: Preprocessed EgoVLP features fetched from our Google Cloud bucket
+* **Note**: No dataset preparation required
+
+### 3. VSLBase on Omnivor Features
+
+* **Model**: Fetches VSLNet model + preprocessed Omnivor features from Google Cloud bucket
+* **Setup**:
+
+  1. Remove the `VSLNet` folder under **Episodic Memory**
+  2. Replace it with the `VSLBase` directory
+
+### 4. VSLBase on EgoVLP Features
+
+* **Model**: Fetches VSLNet model + preprocessed EgoVLP features from Google Cloud bucket
+* **Setup**:
+
+  1. Remove the `VSLNet` folder under **Episodic Memory**
+  2. Replace it with the `VSLBase` directory
+
+### 5. VSLNet on EgoVLP Features + GloVe Embeddings
+
+* **Model**: Pulled from the original GitHub repository
+* **Features & Embeddings**:
+
+  * EgoVLP features from Google Drive
+  * GloVe embeddings from Google Drive
+
+---
