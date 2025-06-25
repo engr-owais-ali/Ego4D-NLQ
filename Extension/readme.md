@@ -1,15 +1,52 @@
-The extension part is divided into ____ part. 
 
-Requirements: Required dataset folder (universal for all notebooks) (https://drive.google.com/drive/folders/1a9Tfdi_X5vUuBynKksF3xt6o_-IsoapF?usp=drive_link) who's shortcut must be in the location /Drive/MyDrive/data in your google drive folder. 
 
-1. Pretraining on synthetic dataset with 10% Validation HoldOut:
-      The respective notebook (Pretraining-On-Whole-Synthetic_dataset) contains the necessary code block. The VSLNet model (available in the folder "VSLNetForPreTraining - With 10% Validation HoldOut") was modified to only accept training and validation set. It only saves top 1 model.
+## Extensions
 
-2. Pretraining on whole synthetic dataset:
-       The respective notebook (Pretraining-On-Synthetic-Dataset-with-10%-Validation-HoldOut) contains the necessary code block. The VSLNet model (available in the folder "VSLNetForPreTraining - With whole synthetic dataset for training") was modified to only accept training set. It only saves top 1 model.
+**Prerequisites**
 
-3. Transfer Learning VSLNet on original Ego4D Dataset:
-       The respective notebook (Step2-TransferLearningOnOriginalEgo4D) contains the necessary code block. The VSLNet model (available in the folder "Pretrainable VSLNet") was modified to expect a .t7 file that would contain the pretrained weights.
+* Download the dataset folder (universal for all notebooks) from:
+  [https://drive.google.com/drive/folders/1a9Tfdi\_X5vUuBynKksF3xt6o\_-IsoapF?usp=drive\_link](https://drive.google.com/drive/folders/1a9Tfdi_X5vUuBynKksF3xt6o_-IsoapF?usp=drive_link)
+* Place its shortcut at:
 
-4. Transfer Learning VSLNet on original Ego4D Dataset - With Frozne Feature Encoder:
-       The respective notebook (Step2-TransferLearningOnOriginalEgo4D) contains the necessary code block. The VSLNet model (available in the folder "Pretrainable VSLNet - (But with Feature Encoder Frozen)") was modified to expect a .t7 file that would contain the pretrained weights.
+  ```
+  /Drive/MyDrive/data
+  ```
+
+---
+
+### 1. Pretraining on synthetic dataset (10% validation hold-out)
+
+* **Notebook**: `Pretraining-On-Synthetic-Dataset-with-10%-Validation-HoldOut.ipynb`
+* **Model folder**: `VSLNetForPreTraining - With 10% Validation HoldOut`
+* **Modifications**:
+
+  * Only uses training + validation splits
+  * Saves top-1 checkpoint
+
+### 2. Pretraining on whole synthetic dataset
+
+* **Notebook**: `Pretraining-On-Whole-Synthetic-Dataset.ipynb`
+* **Model folder**: `VSLNetForPreTraining - Whole Synthetic Dataset`
+* **Modifications**:
+
+  * Uses entire synthetic dataset as training
+  * Saves top-1 checkpoint
+
+### 3. Transfer learning VSLNet on original Ego4D dataset
+
+* **Notebook**: `Step2-TransferLearningOnOriginalEgo4D.ipynb`
+* **Model folder**: `Pretrainable VSLNet`
+* **Modifications**:
+
+  * Expects a `.t7` file of pretrained weights
+
+### 4. Transfer learning VSLNet on original Ego4D dataset (frozen feature encoder)
+
+* **Notebook**: `Step2-TransferLearningOnOriginalEgo4D.ipynb`
+* **Model folder**: `Pretrainable VSLNet - Frozen Feature Encoder`
+* **Modifications**:
+
+  * Freezes the feature-encoder
+  * Expects a `.t7` file of pretrained weights
+
+
