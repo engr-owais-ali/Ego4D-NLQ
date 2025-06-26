@@ -1,6 +1,7 @@
 
 
 ## Extensions
+The details of the synthetic dataset creation is provided in the respective directory. 
 
 **Prerequisites**
 * The dataset folder contains all necessary video features, GloVe embeddings and 2 version of synthetic dataset.
