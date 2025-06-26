@@ -1,0 +1,9 @@
+{
+    "GOOGLE_CLOUD_PROJECT": "avid-tractor-458416-k3",
+    "GOOGLE_CLOUD_LOCATION": "global",
+    "GOOGLE_GENAI_USE_VERTEXAI": "True",
+    "GOOGLE_APPLICATION_CREDENTIALS": "D:\\Projects\\ArashFIles\\avid-tractor-458416-k3-a899e8802cd0.json",
+    "narration_path" : "utils/sampled_narrations.json"
+
+}
+
