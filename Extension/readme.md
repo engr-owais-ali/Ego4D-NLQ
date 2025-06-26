@@ -4,7 +4,7 @@
 
 **Prerequisites**
 * The dataset folder contains all necessary video features, GloVe embeddings and 2 version of synthetic dataset.
-* **Full Synthetic dataset**
+* * **Full Synthetic dataset**
 * * **Train-Val divided synthetic dataset**
 * Copy the dataset folder (universal for all notebooks) from:
   [https://drive.google.com/drive/folders/1a9Tfdi\_X5vUuBynKksF3xt6o\_-IsoapF?usp=drive\_link](https://drive.google.com/drive/folders/1a9Tfdi_X5vUuBynKksF3xt6o_-IsoapF?usp=drive_link)
